@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>鞋子</title>
+  <script src="../js/jquery-3.4.1.min.js"></script>
+  <script src="../js/main.js"></script>
+  <link rel="stylesheet" href="../css/second_page.css">
+
+</head>
+
+<body>
+  <div class="center_title">袜子</div>
+  <div class="info_box">
+    <div id="scores__box">当前积分: 
+      <div id='user_scores'>{{ SCORES }}</div>
+    </div>
+    <div class="Out_login" onclick="window.location.href = 'home.html';">返回主页</div>
+
+  </div>
+
+  <div id="list">
+    <div class="list_box">
+      <img src="http://img3m3.ddimg.cn/63/6/1548270963-1_b_1.jpg" alt="">
+      <div class="name">【3件3折预估券后价：18元】3双安</div>
+      <div class="price">69.00</div>
+      <div class="selled">789</div>
+    </div>
+    <div class="list_box">
+      <img src="http://img3m4.ddimg.cn/86/16/1686776144-1_b_1.jpg" alt="">
+      <div class="name">森马袜子女中筒袜薄款夏ins潮运动风</div>
+      <div class="price">19.00</div>
+      <div class="selled">154</div>
+    </div>
+    <div class="list_box">
+      <img src="http://img3m9.ddimg.cn/92/26/1597682189-1_b_1.jpg" alt="">
+      <div class="name">【3.6品秒价：29】笛莎女童2021连</div>
+      <div class="price">29.00</div>
+      <div class="selled">127</div>
+    </div>
+    <div class="list_box">
+      <img src="http://img3m2.ddimg.cn/81/13/1825395642-1_b_2.jpg" alt="">
+      <div class="name">超品返场【3.5折券后价：29.1元】迪士尼女童袜子2021春装新款儿童宝宝可爱卡通中筒袜（3双装)</div>
+      <div class="price">99.00</div>
+      <div class="selled">2300</div>
+    </div>
+    <div class="list_box">
+      <img src="http://img3m3.ddimg.cn/76/18/1505699293-1_b_1.jpg" alt="">
+      <div class="name">【3件3折预估券后价：7元】安奈儿</div>
+      <div class="price">28.00</div>
+      <div class="selled">784</div>
+    </div>
+    <div class="list_box">
+      <img src="http://img3m3.ddimg.cn/92/10/1548270893-1_b_1.jpg" alt="">
+      <div class="name">【3件3折预估券后价：15元】安奈儿</div>
+      <div class="price">58.00</div>
+      <div class="selled">453</div>
+    </div>
+  </div>
+
+</body>
+<script>
+  function show_score() {
+    // localStorage.setItem("username",US_NAME);
+    SCORES = localStorage.getItem("SCORES")
+    document.getElementById('user_scores').innerHTML = SCORES
+
+  }
+  window.onload = show_score()
+</script>
+
+
+</html>

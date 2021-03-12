@@ -1,0 +1,158 @@
+body {
+  background-color: #f3f3f3;
+  padding: 0;
+  margin: 0;
+}
+
+.bav_bar {
+  position        : fixed;
+  top             : 0;
+  height          : 50px;
+  width           : 100%;
+  background-color: rgb(227, 228, 229);
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+
+}
+
+.bav_bar ul {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  padding        : 0;
+  margin         : 0;
+}
+
+li {
+  list-style: none;
+  padding   : 0;
+  margin    : 0 20px;
+  font-size : 20px;
+  color     : orangered;
+}
+
+li:hover {
+  cursor    : pointer;
+  color     : coral;
+  transition: .3s;
+}
+
+.side_box {
+  width            : 713px;
+  height           : 480px;
+  background-image : url(../images/side_box.png);
+  background-size  : cover;
+  background-repeat: no-repeat;
+  margin           : 80px auto 30px;
+}
+
+.buy_now {
+  background-image : url(../images/buy_now.png);
+  width            : 993px;
+  height           : 254px;
+  background-size  : cover;
+  background-repeat: no-repeat;
+  margin           : 0 auto;
+}
+
+.chaojilist {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  margin-top     : 20px;
+}
+
+.list {
+  height           : 280px;
+  width            : 178px;
+  background-image : url(../images/list.png);
+  background-repeat: no-repeat;
+  background-size  : cover;
+}
+
+.list_main {
+  height        : 280px;
+  width         : 400px;
+  display       : flex;
+  flex-direction: column;
+
+  font-size       : 12px;
+  background-color: #fff;
+  /* padding      : 20px; */
+}
+
+.list_main p {
+  padding  : 5px 20px 0 20px;
+  font-size: 12px;
+  /* 多余内容省略号处理-多行 */
+
+
+}
+
+.list_main_after p {
+  padding           : 5px 20px 0 20px;
+  font-size         : 12px;
+  word-break        : break-all;
+  text-overflow     : ellipsis;
+  display           : -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow          : hidden;
+
+}
+
+.list_main_after {
+  height        : 280px;
+  width         : 178px;
+  display       : flex;
+  flex-direction: column;
+
+  background-color: #fff;
+
+}
+
+.goods98 {
+  background-image: url(../images/98%goods.png);
+  width           : 118px;
+  height          : 33px;
+  background-size : cover;
+  margin-left     : 32px;
+  margin-top      : 10px;
+}
+
+.price {
+  color: #E43;
+}
+
+.price::after {
+  content: "火速拼单>>";
+
+  margin-left: 20px;
+}
+
+.scores {
+  position        : fixed;
+  top             : 70px;
+  right           : 50px;
+  width           : 210px;
+  height          : 50px;
+  background-color: rgba(142, 255, 174, 0.424);
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+  border-radius   : 20px;
+  color           : #E43;
+  font-weight     : 600;
+
+}
+
+.scores::after {
+  content  : " (点击退出)";
+  display  : flex;
+  font-size: 10px;
+}
+
+.scores:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>登录</title>
+  <script src="../js/jquery-3.4.1.min.js"></script>
+
+  <script src="../js/main.js"></script>
+</head>
+<body>
+<div class="bg_box">
+  <div class="bg_img">
+    <div class="login_box">
+      <input type="text" name="username" required="" placeholder="输入用户名" >
+      <input type="password" name="passwd" required="" placeholder="输入密码">
+      <input type="button" name="" value="登录" onclick="denglu()">
+    </div>
+  </div>
+
+
+</div>
+
+<div class="backToHome">
+  <a href="../index.html">返回首页</a>
+</div>
+</body>
+<style>
+    .backToHome{
+        position:absolute;
+        top: 20px;
+        left: 50px;
+    }
+    .login_box {
+        height: 460px;
+        width: 400px;
+        background-color: #fff;
+        position: absolute;
+        right: 20%;
+        border-radius: 5px;
+    }
+
+    .bg_img {
+        height: 460px;
+        width: 100%;
+        padding-top: 10px;
+
+        background-image: url(../images/T1ruLjBvd_1RCvBVdK.jpeg);
+        background-repeat: no-repeat;
+
+        background-position: center;
+    }
+
+    .bg_box {
+        height: 480px;
+        width: 100%;
+        background-color: #fff1e7;
+        margin-top: 8%;
+    }
+
+    .login_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .login_box input {
+        outline: none;
+        min-height: 32px;
+        font-size: 14px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: none;
+        border-bottom: 1px solid #eee;
+
+    }
+    input[type='button']{
+        background-color: #fff1e6;
+        width: 80px;
+        height: 40px;
+        border: 1px solid #eee;
+        cursor: pointer;
+    }
+
+
+</style>
+</html>

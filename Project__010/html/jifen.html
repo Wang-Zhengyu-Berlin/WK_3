@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>积分查询</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <script src="../js/main.js"></script>
+  <script src="../js/jquery-3.4.1.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+
+      <a class="navbar-brand" href="index.html">GOME</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+             aria-expanded="false">账户中心 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="login.html">退出登录</a></li>
+
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="container">
+  <div class="page-header">
+    <h1> 积分查询 <small>点击按钮查询积分</small></h1>
+  </div>
+
+ <h2>您的积分</h2>  <div id="hqjf"></div>
+  <div class="btn btn-primary" onclick="read_jifen()">开始查询</div>
+</div>
+
+
+</body>
+<style>
+    body{
+        padding-top: 50px;
+    }
+
+
+
+</style>
+<script>
+    function read_jifen() {
+        jifen = localStorage.getItem("jifen")
+        document.getElementById('hqjf').innerHTML = jifen
+    }
+
+</script>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>首页</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="header_bg"></div>
+  <div class="nav_top_list">
+    <div class="logo_class"><img src="../images/youhaohuo.png" alt=""></div>
+
+    <div class="main">
+      <div class="row">
+        <div class="item">
+          <img src="../images/haohuo1.png" alt="">
+          <div class="title" onclick="window.location.href = 'buy.html';">Pure Cashmere 保暖针</div>
+        </div>
+        <div class="item">
+          <img src="../images/haohuo2.png" alt="">
+          <div class="title" onclick="window.location.href = 'chuang.html';">二胎家庭都在用这种床</div>
+        </div>
+        <div class="item">
+          <img src="../images/haohuo3.png" alt="">
+          <div class="title" onclick="window.location.href = 'zhoudafu.html';" >  周大福 古法黄金...</div>
+        </div>
+        <div class="item">
+          <img src="../images/haohuo4.png" alt="">
+          <div class="title" onclick="window.location.href = 'door.html';">自装推拉式纱窗</div>
+        </div>
+        <div class="item">
+          <img src="../images/haohuo5.png" alt="">
+          <div class="title" onclick="window.location.href = 'shouzhuo.html';">TOUS桃丝熊 经典款开...</div>
+        </div>
+        <div class="item">
+          <img src="../images/haohuo6.png" alt="">
+          <div class="title" onclick="window.location.href = 'erji.html';">华为Freebuds2无线蓝牙耳机</div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <div class="nav_top_list">
+    <div class="logo_class"><img src="../images/meiri.png" alt=""></div>
+
+    <div class="main">
+      <div class="row">
+        <div class="item">
+          <img src="../images/haodian1.png" alt="">
+          <div class="title">女士鞋厂</div>
+        </div>
+        <div class="item">
+          <img src="../images/haodian2.png" alt="">
+          <div class="title">毛衣专柜</div>
+        </div>
+        <div class="item">
+          <img src="../images/haodian3.png" alt="">
+          <div class="title">毛线专场</div>
+        </div>
+        <div class="item">
+          <img src="../images/haodian4.png" alt="">
+          <div class="title">斜挎小皮包</div>
+        </div>
+        <div class="item">
+          <img src="../images/haodian6.png" alt="">
+          <div class="title">平衡车</div>
+        </div>
+        <div class="item">
+          <img src="../images/haodian5.png" alt="">
+          <div class="title">手表</div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <div class="nav_top_list">
+    <div class="logo_class"><img src="../images/zhibo.png" alt=""></div>
+
+    <div class="main">
+      <div class="row">
+        <div class="item">
+          <img src="../images/remai1.png" alt="">
+          <div class="title">HR赫莲娜绿宝瓶精华PRO </div>
+        </div>
+        <div class="item">
+          <img src="../images/remai2.png" alt="">
+          <div class="title">Ulike蓝宝石脱毛仪光</div>
+        </div>
+        <div class="item">
+          <img src="../images/remai5.png" alt="">
+          <div class="title">nosucism 2020S/S快速收紧</div>
+        </div>
+        <div class="item">
+          <img src="../images/rimai3.png" alt="">
+          <div class="title">洗衣机槽清洗剂泡腾片全自动</div>
+        </div>
+        <div class="item">
+          <img src="../images/rimai4.png" alt="">
+          <div class="title">洗衣机槽清洗剂泡腾片...</div>
+        </div>
+        <div class="item">
+          <img src="../images/remai6.png" alt="">
+          <div class="title">华为Freebuds2无线蓝牙耳机</div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <div class="round_score">
+    您的积分: <div id="fenshu">0</div>
+</div>
+  
+</body>
+<script>
+  function get_score() {
+    SCORES = localStorage.getItem("SCORES")
+    document.getElementById('fenshu').innerHTML = SCORES
+  }
+  window.onload = get_score;
+
+</script>
+</html>

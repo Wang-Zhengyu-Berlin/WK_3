@@ -1,0 +1,233 @@
+body {
+  margin : 0;
+  padding: 0;
+  height : 100%;
+
+}
+
+.HeaderB_g_Box {
+  background: url(../img/HeaderB_g_Box.jpeg);
+  width     : 100%;
+  height    : 400px;
+  position  : absolute;
+  top       : 0;
+  left      : 0;
+  z-index   : -999;
+}
+
+.HeaderB_g_Box::after {
+  content        : "幸运の杂货店";
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  font-size      : 32px;
+  color          : #fff;
+  padding        : 80px 0 0 0;
+}
+
+.main {
+  position        : absolute;
+  top             : 200px;
+  background-color: #f3f3f3;
+  height          : 800px;
+  width           : 80%;
+  margin          : 0 10% 0;
+  border-radius   : 50px 50px 0 0;
+}
+
+.SideBox {
+  position: fixed;
+  top     : 300px;
+  left    : 140px;
+  width   : 200px;
+
+  background-color: #fff;
+
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+
+  border-radius: 5px 5px 0 0;
+
+
+}
+
+.SideBox::before {
+  content         : "出售类别";
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+  font-size       : 22px;
+  height          : 32px;
+  background-color: brown;
+  color           : #eee;
+  padding         : 20px 5px;
+  border-radius   : 5px 5px 0 0;
+
+}
+
+.SideBox ul {
+  padding         : 0;
+  margin          : 0;
+  /* border-radius: 50px 50px 0 0; */
+
+
+}
+
+.SideBox ul li {
+  padding        : 0;
+  margin         : 0;
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  font-size      : 18px;
+
+
+
+}
+
+.SideBox li {
+  list-style   : none;
+  height       : 50px;
+  border-bottom: 1px solid #eee;
+}
+
+
+
+.Content {
+  width          : 90%;
+  height         : 100%;
+
+  float          : right;
+  margin-right   : 5%;
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+}
+
+.row_box {}
+
+.contain {
+  height          : 400px;
+  width           : 233px;
+  margin          : 50px;
+  /* border       :1px solid red; */
+  display         : flex;
+  flex-direction  : column;
+  justify-content : center;
+  align-items     : center;
+  background-color: #ffffff;
+  border-radius   : 10px;
+  box-shadow      : 0 15px 25px rgba(0, 0, 0, .1);
+
+}
+
+.ImgBox {
+  background-size  : cover;
+  background-repeat: no-repeat;
+  width            : 220px;
+  height           : 220px;
+
+}
+
+.InfoBox {
+  height        : 180px;
+  display       : flex;
+  flex-direction: column;
+  padding       : 0 20px;
+  margin-top    : 10px;
+}
+
+.InfoDetails {
+  margin-top        : 20px;
+  color             : #2e2e2e;
+  word-break        : break-all;
+  text-overflow     : ellipsis;
+  display           : -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow          : hidden;
+}
+
+.InfoDetails::before {
+  content    : "火速围观>>";
+  font-size  : 10px;
+  color      : rgb(255, 20, 20);
+  margin-right: 5px;
+}
+
+.InfoPrice {
+  color    : crimson;
+  font-size: 22px;
+}
+
+.InfoPrice::before {
+  content  : "¥";
+  font-size: 12px;
+}
+.SideBox li:hover{
+  cursor: pointer;
+}
+.side_img{
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid #bdbdbd81;
+
+}
+.side_info{
+  width: 600px;
+  height: 350px;
+  /* background-color: rgba(255, 20, 145, 0.123); */
+  border: 1px solid #bdbdbd81;
+}
+.info_box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  
+}
+.side_info .side_info_name {
+  font: 700 16px Arial,"microsoft yahei";
+  color: #666;
+  padding-top: 10px;
+  line-height: 28px;
+  margin-bottom: 5px;
+  padding: 20px;
+
+
+}
+.side_info_price{
+  color: #E44;
+  font-size: 22px;
+  margin-top: 20px;
+  padding: 20px;
+
+}
+.side_info_price::before{
+  content: "¥";
+  text-decoration: line-through;
+  font-size: 16px;
+}
+.side_info_price::after{
+content: " [￥168.00] ";
+text-decoration: line-through;
+font-size: 12px;
+color: #666;
+}
+.details{
+  margin-top: 32px;
+  font-size: 12px;
+  color: #33a9dc;
+  margin-left: 10px;
+}
+.btn_pay{
+  width: 120px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ef0020;
+  color: #fff;
+  margin: 20px 0 20px 20px;
+}

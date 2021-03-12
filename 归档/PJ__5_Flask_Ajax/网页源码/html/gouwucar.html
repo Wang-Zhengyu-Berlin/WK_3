@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>购物车</title>
+</head>
+
+<body>
+
+  <div class="box_index">
+    <div class="Img_box">
+      <img src="../images/empty.png" alt="">
+    </div>
+    <div class="Info_box">
+      <div class="item">您的购物车还是空的,您可以:</div>
+      <div class="item back_home" onclick="window.location.href = 'home.html';">
+        返回首页
+      </div>
+      <div class="item price" style="color: #E43;font-size: 26px;">将您喜欢的加入购物车</div>
+
+    </div>
+  </div>
+
+
+</body>
+<style>
+  .Img_box img {
+    width: 500px;
+    height: 500px;
+    margin: 200px 0 200px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box_index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+
+  .Info_box {
+    height: 500px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #eee;
+    background-color: #f3f3f3;
+
+  }
+
+  .item {
+    padding: 20px;
+    font-size: 22px;
+
+  }
+
+  .price::after {
+    content: "欢迎您的光临~";
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    margin-left: 5px;
+  }
+
+  .back_home {
+    color: rgb(143, 143, 143);
+    text-align: left;
+    width: 100px;
+    height: 40px;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+</style>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../js/jquery-3.4.1.min.js"></script>
+  <script src="../js/main.js"></script>
+  <link rel="stylesheet" href="../css/home.css">
+</head>
+
+<body>
+  <div class="center_title">购物中心</div>
+  <div class="info_box">
+    <div id="scores__box">当前积分:
+      <div id='user_scores'>{{ SCORES }}</div>
+    </div>
+    <div class="Out_login" onclick="window.location.href = '../index.html';">退出登录</div>
+  </div>
+  <div class="main">
+    <div class="side_box">
+      <ul style="padding:0;margin: 0;border-radius: 20px;">
+        <li onclick="window.location.href = 'shoes.html';">鞋子</li>
+        <li onclick="window.location.href = 'tshirt.html';">T-恤</li>
+        <li onclick="window.location.href = 'cap.html';">帽子</li>
+        <li onclick="window.location.href = 'socks.html';">袜子</li>
+        <li onclick="window.location.href = 'overcoat.html';">外套</li>
+        <li onclick="window.location.href = 'trousers.html';">裤子</li>
+      </ul>
+
+    </div>
+    <div id="list"></div>
+
+  </div>
+
+
+</body>
+<script type="text/template" id="teamEvaluate">
+  <div class="list_box">
+    <img src="{{  WE_IMG  }}" alt="">
+    <div class="name">{{  WE_NAME  }}</div>
+    <div class="price">{{  WE_PRICE  }}</div>
+    <div class="selled">{{  WE_SELLED  }}</div>
+  </div>
+</script>
+<script>
+  // http://127.0.0.1:5000/add_scores?US_NAME=admin3
+  function get_all() {
+    // localStorage.setItem("username",US_NAME);
+    US_NAME = localStorage.getItem("username")
+    console.log(US_NAME)
+    $.ajax({
+      url: "http://127.0.0.1:5000/Ware_ALL",
+      type: "get",
+      async: false,
+      dataType: "json",
+      success: function (res) {
+        console.log(res.data)
+        var htmlstr = "";
+        var temphtmlstr = document.querySelector("#teamEvaluate").innerHTML;
+        for (var i = 0; i < res.data.length; i++) {
+          var obj = res.data[i];
+          var repstr = temphtmlstr;
+          // console.log(repstr)
+          repstr = repstr.replace("{{  WE_NAME  }}", obj[1]);
+          repstr = repstr.replace("{{  WE_PRICE  }}", obj[2]);
+          repstr = repstr.replace("{{  WE_SELLED  }}", obj[5]);
+          repstr = repstr.replace("{{  WE_IMG  }}", obj[7]);
+
+          // console.log(repstr)
+          htmlstr += repstr;
+          document.getElementById('list').innerHTML = htmlstr;
+          show_score()
+
+          // for (j=0;j<repstr.length;j++) {
+          //   repstr = repstr.replace("{{  name  }}", obj[1]);
+          //   console.log(obj[1])
+          //   console.log(repstr)
+          // }
+
+        }
+
+      },
+      error: function (e) {
+        console.log(e);
+      }
+    });
+  }
+  function show_score() {
+    // localStorage.setItem("username",US_NAME);
+    SCORES = localStorage.getItem("SCORES")
+    document.getElementById('user_scores').innerHTML = SCORES
+
+  }
+  window.onload = get_all;
+  // window.onload = show_score;
+
+</script>
+
+</html>

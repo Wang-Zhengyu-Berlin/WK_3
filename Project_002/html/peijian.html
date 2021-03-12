@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>配件</title>
+  <script src="../js/jquery-3.4.1.min.js"></script>
+  <script src="../js/main.js"></script>
+  <link rel="stylesheet" href="../css/partcss.css">
+</head>
+
+<body>
+  <div class="title">
+    <h2>配件专区</h2>
+  </div>
+  <div class="daohanglan">
+    <ul>
+      <li onclick="window.location.href = 'home.html';">手机</li>
+      <li onclick="window.location.href = 'computer.html';">电脑</li>
+      <li onclick="window.location.href = 'peijian.html';">配件</li>
+      <li onclick="window.location.href = 'ershouji.html';">二手机</li>
+      <li onclick="window.location.href = 'apple.html';">苹果专卖</li>
+    </ul>
+  </div>
+  <div class="messagebox">
+    <div id="scoresbox">您有积分:
+      <div id='scores'>{{ SCORES }}</div>
+    </div>
+    <div class="quit" onclick="window.location.href = '../index.html';">退出登录</div>
+  </div>
+  <div class="main">
+    <div class="list_row">
+      <div style="display: flex;flex-flow: column;">
+        <div
+          style="background-repeat: no-repeat; height: 220px;background-image: url(https://img13.360buyimg.com/n7/jfs/t1/133463/16/12894/243384/5f9119f4E47117340/e78d188aba392607.jpg);">
+        </div>
+        <div style="height: 160px;display: flex;flex-flow: column;width: 200px;padding: 0 5px;">
+          <span style="color: brown;font-size: 22px;">￥19.99</span>
+          <span
+            style="font-size: 14px;margin-top: 10px;word-break: break-all;text-overflow: ellipsis;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;">
+            罗马仕 数据线三合一苹果Type-c安卓手机充电线3.5A加长快充一拖
+          </span>
+        </div>
+      </div>
+      <div style="display: flex;flex-flow: column;">
+        <div style="background-repeat: no-repeat; height: 220px;background-image: url(https://img13.360buyimg.com/n7/jfs/t1/168495/23/9254/102322/60407241Ef867ea43/82e8afd6f55e7ee9.jpg);">
+        </div>
+        <div style="height: 160px;display: flex;flex-flow: column;width: 200px;padding: 0 5px;">
+          <span style="color: brown;font-size: 22px;">￥21.90</span>
+          <span
+            style="font-size: 14px;margin-top: 10px;word-break: break-all;text-overflow: ellipsis;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;">
+            OKSJ Type-c数据线5A华为小米手机充电器线快充支持40w荣耀
+          </span>
+        </div>
+      </div>
+      <div style="display: flex;flex-flow: column;">
+        <div style="background-repeat: no-repeat; height: 220px;background-image: url(https://img10.360buyimg.com/n7/jfs/t1/154036/13/16497/133757/6013a9c9Ef9625f16/91169d291f7ffe9f.jpg);">
+        </div>
+        <div style="height: 160px;display: flex;flex-flow: column;width: 200px;padding: 0 5px;">
+          <span style="color: brown;font-size: 22px;">￥44.00</span>
+          <span
+            style="font-size: 14px;margin-top: 10px;word-break: break-all;text-overflow: ellipsis;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;">
+            华为原装5a超级快充数据线p20p30p40mate30 40pro荣耀
+          </span>
+        </div>
+      </div>
+      <div style="display: flex;flex-flow: column;">
+        <div style="background-repeat: no-repeat; height: 220px;background-image: url(https://img12.360buyimg.com/n7/jfs/t1/165695/6/1640/189960/5ffd71adEc6936774/ea06631a2ff8f154.jpg);">
+        </div>
+        <div style="height: 160px;display: flex;flex-flow: column;width: 200px;padding: 0 5px;">
+          <span style="color: brown;font-size: 22px;">￥ 1299.00</span>
+          <span
+            style="font-size: 14px;margin-top: 10px;word-break: break-all;text-overflow: ellipsis;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;">
+            sh苹果数据线充电线原装快充手机充电器线插头
+
+          </span>
+        </div>
+      </div>
+      <div style="display: flex;flex-flow: column;">
+        <div style="background-repeat: no-repeat; height: 220px;background-image: url(https://img13.360buyimg.com/n7/jfs/t1/162145/34/7500/158223/6033629bEdd85bf06/582316630d15abec.jpg);">
+        </div>
+        <div style="height: 160px;display: flex;flex-flow: column;width: 200px;padding: 0 5px;">
+          <span style="color: brown;font-size: 22px;">￥ 145.00</span>
+          <span
+            style="font-size: 14px;margin-top: 10px;word-break: break-all;text-overflow: ellipsis;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;">
+            Apple USB-C/雷霆3 转 Lightning/闪电连接线 快充线 (1 米) iPhone iPad 手机 平板
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="list_row">
+      <div style="display: flex;flex-flow: column;">
+        <div style="background-repeat: no-repeat; height: 220px;background-image: url(https://img10.360buyimg.com/n7/jfs/t1/156286/26/1792/58748/5fe43d3fE16c0e47a/d1a8c11eb208df3c.jpg);">
+        </div>
+        <div style="height: 160px;display: flex;flex-flow: column;width: 200px;padding: 0 5px;">
+          <span style="color: brown;font-size: 22px;">￥ 59.00</span>
+          <span
+            style="font-size: 14px;margin-top: 10px;word-break: break-all;text-overflow: ellipsis;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;">
+            苹果数据线苹果充电线京东自营原装数据线
+          </span>
+        </div>
+      </div>
+      <div style="display: flex;flex-flow: column;">
+        <div style="background-repeat: no-repeat; height: 220px;background-image: url(https://img11.360buyimg.com/n7/jfs/t6079/124/9592096521/94642/56b4f00/599646dbN8a74b2d4.jpg);">
+        </div>
+        <div style="height: 160px;display: flex;flex-flow: column;width: 200px;padding: 0 5px;">
+          <span style="color: brown;font-size: 22px;">￥ 49.00</span>
+          <span
+            style="font-size: 14px;margin-top: 10px;word-break: break-all;text-overflow: ellipsis;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;">
+            华为HUAWEI 原装安卓数据线 充电线 5A快充/TypeC接口 华为/荣耀手机
+          </span>
+        </div>
+      </div>
+      <div style="display: flex;flex-flow: column;">
+        <div style="background-repeat: no-repeat; height: 220px;background-image: url(https://img13.360buyimg.com/n7/jfs/t1/160001/9/11619/125460/6045d32fE966cb7ee/99d6b107b9205c65.jpg);">
+        </div>
+        <div style="height: 160px;display: flex;flex-flow: column;width: 200px;padding: 0 5px;">
+          <span style="color: brown;font-size: 22px;">￥42.00</span>
+          <span
+            style="font-size: 14px;margin-top: 10px;word-break: break-all;text-overflow: ellipsis;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;">
+            品胜 数据线三合一 苹果Type-c安卓手机充电线1.5米快充 适用
+          </span>
+        </div>
+      </div>
+      <div style="display: flex;flex-flow: column;">
+        <div style="background-repeat: no-repeat; height: 220px;background-image: url(https://img13.360buyimg.com/n7/jfs/t1/10098/18/8048/163371/5c32f402Ef7da6370/09d6b6fc41316a54.jpg);">
+        </div>
+        <div style="height: 160px;display: flex;flex-flow: column;width: 200px;padding: 0 5px;">
+          <span style="color: brown;font-size: 22px;">￥ 32.00</span>
+          <span
+            style="font-size: 14px;margin-top: 10px;word-break: break-all;text-overflow: ellipsis;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;">
+            蒙奇奇苹果数据线充电线手机PD快充头车载ipad充电器线
+          </span>
+        </div>
+      </div>
+      <div style="display: flex;flex-flow: column;">
+        <div style="background-repeat: no-repeat; height: 220px;background-image: url(https://img10.360buyimg.com/n7/jfs/t1/165495/1/8062/160168/603c9d95E8088d19d/b58dae156930c161.jpg);">
+        </div>
+        <div style="height: 160px;display: flex;flex-flow: column;width: 200px;padding: 0 5px;">
+          <span style="color: brown;font-size: 22px;">￥ 45.00</span>
+          <span
+            style="font-size: 14px;margin-top: 10px;word-break: break-all;text-overflow: ellipsis;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;">
+            倍思 数据线一拖三快充100W/40W/20W/18W二拖三转接线 支持苹果12Type-C安卓华为小米电脑充电器线黑 【10号6点秒杀】一拖三6A快充线限时秒杀价42元； 
+
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+<script>
+  function get_score() {
+    SCORES = localStorage.getItem("SCORES")
+    document.getElementById('scores').innerHTML = SCORES
+  }
+  window.onload = get_score;
+
+</script>
+
+</html>

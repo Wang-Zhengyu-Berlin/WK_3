@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>鞋子</title>
+  <script src="../js/jquery-3.4.1.min.js"></script>
+  <script src="../js/main.js"></script>
+  <link rel="stylesheet" href="../css/second_page.css">
+
+</head>
+
+<body>
+  <div class="center_title">鞋子</div>
+  <div class="info_box">
+    <div id="scores__box">当前积分: 
+      <div id='user_scores'>{{ SCORES }}</div>
+    </div>
+    <div class="Out_login" onclick="window.location.href = 'home.html';">返回主页</div>
+
+  </div>
+
+  <div id="list">
+    <div class="list_box">
+      <img src="http://img3m9.ddimg.cn/50/3/1463339939-1_b_1.jpg" alt="">
+      <div class="name">[1折价53.9元]唐狮高帮鞋子男学生休</div>
+      <div class="price">538.00</div>
+      <div class="selled">23</div>
+    </div>
+    <div class="list_box">
+      <img src="http://img3m2.ddimg.cn/95/3/1690216502-1_b_2.jpg" alt="">
+      <div class="name">回力官方旗舰店回力马丁靴男靴子春冬季新款复古英伦风高帮男鞋潮鞋百搭工装鞋子</div>
+      <div class="price">78.00</div>
+      <div class="selled">46</div>
+    </div>
+    <div class="list_box">
+      <img src="http://img3m4.ddimg.cn/94/2/1126777504-1_b_1.jpg" alt="">
+      <div class="name">[1折价50.9元]唐狮秋季滑板鞋男小白鞋子舒适低帮男潮鞋韩版潮流港风休闲帆布鞋</div>
+      <div class="price">508.00</div>
+      <div class="selled">25</div>
+    </div>
+    <div class="list_box">
+      <img src="http://img3m2.ddimg.cn/76/21/1551839332-1_b_3.jpg" alt="">
+      <div class="name">【限时优惠 满99再减20元】回力</div>
+      <div class="price">538.00</div>
+      <div class="selled">89</div>
+    </div>
+    <div class="list_box">
+      <img src="http://img3m4.ddimg.cn/9/17/1126788804-1_b_1.jpg" alt="">
+      <div class="name">[1折价37.9元]唐狮秋季男滑板鞋</div>
+      <div class="price">379.00</div>
+      <div class="selled">93</div>
+    </div>
+    <div class="list_box">
+      <img src="http://img3m2.ddimg.cn/86/21/1705609112-1_b_2.jpg" alt="">
+      <div class="name">【限时优惠 满99再减20元】回力</div>
+      <div class="price">75.00</div>
+      <div class="selled">43</div>
+    </div>
+  </div>
+
+</body>
+<script>
+  function show_score() {
+    // localStorage.setItem("username",US_NAME);
+    SCORES = localStorage.getItem("SCORES")
+    document.getElementById('user_scores').innerHTML = SCORES
+
+  }
+  window.onload = show_score()
+</script>
+
+
+</html>

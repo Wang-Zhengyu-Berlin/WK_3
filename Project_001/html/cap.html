@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>鞋子</title>
+  <script src="../js/jquery-3.4.1.min.js"></script>
+  <script src="../js/main.js"></script>
+  <link rel="stylesheet" href="../css/second_page.css">
+
+</head>
+
+<body>
+  <div class="center_title">帽子</div>
+  <div class="info_box">
+    <div id="scores__box">当前积分: 
+      <div id='user_scores'>{{ SCORES }}</div>
+    </div>
+    <div class="Out_login" onclick="window.location.href = 'home.html';">返回主页</div>
+
+  </div>
+
+  <div id="list">
+    <div class="list_box">
+      <img src="http://img3m4.ddimg.cn/16/32/1772134864-1_b_2.jpg" alt="">
+      <div class="name">超品返场【3.5折券后价：26.1元】迪士尼男童时尚棒球帽2020新款儿童宝宝帅气帽子 迪士尼超品3.5折叠80券立即抢！</div>
+      <div class="price">88.00</div>
+      <div class="selled">53</div>
+    </div>
+    <div class="list_box">
+      <img src="http://img3m7.ddimg.cn/23/29/1775216147-1_b_3.jpg" alt="">
+      <div class="name">茵曼帽子女冬羊毛贝雷帽女英伦秋冬韩版日系百搭针织画家帽南瓜帽</div>
+      <div class="price">79.00</div>
+      <div class="selled">25</div>
+    </div>
+    <div class="list_box">
+      <img src="http://img3m7.ddimg.cn/55/9/1774263007-1_b_1.jpg" alt="">
+      <div class="name">超品返场【3.5折券后价：24.1元】多彩时光男童梭织时尚渔夫帽 迪士尼超品3.5折叠80券立即抢！</div>
+      <div class="price">82.30</div>
+      <div class="selled">27</div>
+    </div>
+    <div class="list_box">
+      <img src="http://img3m9.ddimg.cn/49/33/1701693229-1_b_2.jpg" alt="">
+      <div class="name">【2件5折到手价：19元】左西童装男童帽子秋冬儿童加厚针织毛线帽韩版潮冬装2020新款 左西就是潮品 周二新品上新</div>
+      <div class="price">38.00</div>
+      <div class="selled">48</div>
+    </div>
+    <div class="list_box">
+      <img src="http://img3m9.ddimg.cn/97/26/1533871249-1_b_1.jpg" alt="">
+      <div class="name">【限时抢券后预估价：15】笛莎女童毛线帽2020冬季新款儿童可爱毛线帽小女孩秋冬洋气帽子</div>
+      <div class="price">19.00</div>
+      <div class="selled">53</div>
+    </div>
+    <div class="list_box">
+      <img src="http://img3m6.ddimg.cn/69/23/1579446366-1_b_1.jpg" alt="">
+      <div class="name">【3.11超品 折后预估价：31.9】巴拉巴拉儿童帽子男女宝宝外出遮阳帽鸭舌帽时尚色彩刺绣休闲帽潮 精致滴塑标，经典学院风</div>
+      <div class="price">58.59</div>
+      <div class="selled">58</div>
+    </div>
+  </div>
+
+</body>
+<script>
+  function show_score() {
+    // localStorage.setItem("username",US_NAME);
+    SCORES = localStorage.getItem("SCORES")
+    document.getElementById('user_scores').innerHTML = SCORES
+
+  }
+  window.onload = show_score()
+</script>
+
+
+</html>

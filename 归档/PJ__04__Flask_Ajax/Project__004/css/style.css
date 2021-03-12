@@ -1,0 +1,94 @@
+html{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-image : url(../images/bg_img.jpeg);
+  background-size  : cover;
+  background-repeat: no-repeat;
+}
+
+.Box_denglu {
+  width           : 200px;
+  height          : 300px;
+  background-color: #3b86b7;
+}
+
+.Box_denglu {
+  width           : 300px;
+  height          : 400px;
+  background-color: #fff;
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+  position        : absolute;
+  top             : 25%;
+  left            : 18%;
+  box-shadow      : 0 15px 25px rgba(80, 80, 80, 0.5);
+  border-radius   : 5px;
+
+}
+
+.Box_denglu .inputstyle {
+  position: relative;
+}
+
+.Box_denglu .inputstyle input {
+  width         : 100%;
+  padding       : 10px 0;
+  font-size     : 16px;
+  color         : rgb(179, 179, 179);
+  letter-spacing: 1px;
+  margin-bottom : 30px;
+  border        : none;
+  border-bottom : 1px solid rgb(179, 179, 179);
+  outline       : none;
+  background    : transparent;
+}
+
+.Box_denglu .inputstyle label {
+  position      : absolute;
+  top           : 0;
+  left          : 0;
+  padding       : 10px 0;
+  letter-spacing: 1px;
+  font-size     : 16px;
+  color         : rgb(179, 179, 179);
+  pointer-events: none;
+  transition    : .3s;
+}
+
+.Box_denglu .inputstyle input:focus~label,
+.Box_denglu .inputstyle input:valid~label {
+  top      : -18px;
+  left     : 0;
+  color    : rgb(6, 14, 50);
+  font-size: 10px;
+}
+
+.Box_denglu input[type="button"] {
+  background: transparent;
+  border    : none;
+  outline   : none;
+  color     : #fff;
+  background: rgb(6, 14, 50);
+  padding   : 10px 20px;
+  border-radius: 5px;
+  cursor    : pointer;
+}
+.biaoti{
+  position: absolute;
+  top: 40px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  font-size: 24px;
+  
+}
+.no_access{
+  position: absolute;
+  bottom: 20px;
+  color: #3b86b7;
+  font-size: 12px;
+}
+

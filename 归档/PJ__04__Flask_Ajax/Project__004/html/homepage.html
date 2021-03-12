@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>首页</title>
+  <link rel="stylesheet" href="../css/homepage.css">
+</head>
+
+<body>
+  <div class="bav_bar">
+    <ul>
+      <li onclick="window.location.href = 'homepage.html';">主页</li>
+      <li onclick="window.location.href = 'jiadian.html';">家电</li>
+      <li onclick="window.location.href = ' fuzhuang.html';">服装</li>
+      <li onclick="window.location.href = 'yidongshebei.html';">移动设备</li>
+      <li onclick="window.location.href = 'xiangji.html';">相机</li>
+      <li onclick="window.location.href = 'pibao.html';">皮包</li>
+      <li onclick="window.location.href = 'lvyou.html';">旅游</li>
+    </ul>
+  </div>
+  <div class="side_box"></div>
+  <div class="buy_now"></div>
+  <div class="chaojilist">
+    <div class="list"></div>
+    <div class="list_main">
+      <img src="../images/main_list.png" alt="">
+      <div class="goods98"></div>
+      <p>美的（Midea）破壁机家用加热料理机 榨汁机 绞肉馅机婴儿辅食机可预约豆浆机果汁机PB12Easy219
+        <br /> <span class="price">¥369.00</span>
+      </p>
+    </div>
+    <div class="list_main_after">
+      <img src="../images/main_after.png" alt="">
+      <div class="goods98"></div>
+      <p>美的（Midea）破壁机家用加热料理机 榨汁机 绞肉馅机婴儿辅食机可预约豆浆机果汁机PB12Easy219</p>
+
+    </div>
+    <div class="list_main_after">
+      <img src="../images/main_list_2.png" alt="">
+      <div class="goods98"></div>
+      <p>美的（Midea）M1-L213B 21升 快捷微波炉 家用小型迷你 360°转盘加热 旋钮操控 精准控温 五档火力 易洁内胆</p>
+
+    </div>
+    <div class="list_main_after">
+      <img src="../images/main_list_3.png" alt="">
+      <div class="goods98"></div>
+      <p>小米手环5 NFC版 石墨黑 动态彩屏  智能运动监测 内置小爱同学语音遥控手机 伸手即可刷卡磁吸式充电</p>
+    </div>
+
+
+
+  </div>
+  <div class="scores" onclick="window.location.href = ' ../index.html';" >
+    您已积分: <div id="scores">0</div>
+  </div>
+
+</body>
+<script>
+  function huoqujifen() {
+    SCORES = localStorage.getItem("SCORES")
+    document.getElementById('scores').innerHTML = SCORES
+  }
+  window.onload = huoqujifen;
+
+</script>
+</html>
